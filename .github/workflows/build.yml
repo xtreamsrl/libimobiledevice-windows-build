@@ -58,7 +58,7 @@ jobs:
 
     - name: build libusbmuxd
       run: |
-        git clone --depth=1 --recursive https://github.com/libimobiledevice/libusbmuxd
+        git clone --depth=1 --recursive https://github.com/xtreamsrl/libusbmuxd
         cd libusbmuxd/
         ./autogen.sh CC=gcc CXX=g++ --enable-debug --without-cython
         make -j install
